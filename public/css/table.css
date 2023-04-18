@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Open+Sans:wght@600&display=swap');
+
+:root{
+    --color1:rgba(6, 32, 38, 1);
+    --color2:rgba(137, 140, 116, 1);
+    --color3:rgba(242, 222, 215, 1);
+    --color4:rgba(216, 199, 192, 1);
+    --color5:rgba(140, 77, 63, 1);
+    --color6:#F25C05;
+    --color7:#F2E416;    
+
+}
+
+main{
+    width: 50vw;
+    min-height: 80vh;
+    margin: 150px auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: var(--color1);
+    border-radius: 4px;
+    position: relative;
+}
+
+
+main>div{
+    position: relative;
+    background-color: white;
+    width: 80%;
+    min-height: 400px;
+    margin: 150px auto;
+    border-radius: 4px;
+}
+
+main>div table{
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+}
+
+main>div table tr{
+    line-height: 35px;
+    text-align: center;
+}
+
+main>div table tr th{
+    background-color: var(--color6);
+    color: #FFF;
+}
+
+main>div table tr td form>button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+main>div table tr td form>button i{
+    font-size: 1rem;
+}
+
+#end_text{
+    display: block;
+    padding: 10px 20px;
+}

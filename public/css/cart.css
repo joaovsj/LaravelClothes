@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Open+Sans:wght@600&display=swap');
+
+:root{
+    --color1:rgba(6, 32, 38, 1);
+    --color2:rgba(137, 140, 116, 1);
+    --color3:rgba(242, 222, 215, 1);
+    --color4:rgba(216, 199, 192, 1);
+    --color5:rgba(140, 77, 63, 1);
+    --color6:#F25C05;
+    --color7:#F2E416;    
+
+}
+
+main{
+    width: 65%;
+    min-height: 80vh;
+    margin: 40px 40px 40px 10vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 4px;
+    position: relative;
+}
+
+main table{
+    padding: 40px;
+    width: 100%;
+}
+
+main table thead tr,
+main table tbody tr{
+    padding: 20px;
+}
+
+main table thead tr th{
+    border-radius: 4px;
+    background-color: var(--color1);
+    color: #FFF;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 15px;
+
+}
+
+main table tbody tr td{
+    height: 100px;
+    text-align: center;
+}
+
+table tbody tr td #price{
+    padding: 8px;
+    width: 50px;
+    font-size: 1rem;
+}
+
+main table tbody tr td:last-child button{
+    padding: 10px 20px;
+    background-color: #F25C05;
+    color: #FFF;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 14px var(--color6);
+    transition: .2s;
+}
+
+main table tbody tr td:last-child button:hover{
+    background-color: #d65206;
+}
+
+main table tbody tr td span{
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+main table tbody tr td span img{
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    box-shadow: 0 4px 10px var(--color1);
+}
+
+.values{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    right: -30%;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 4px;
+}
+
+.values>span{   
+    width: 100%;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+
+.values button{
+    width: 220px;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.values .end{
+    background-color: #2394cc;
+    box-shadow: 0 4px 8px #1a6b93;
+    color: #FFF;
+}
+
+
+.values .continue{
+    background-color: #00D900;
+    color: #FFF;
+    box-shadow: 0 4px 8px #008300;
+}
+
+.values button i{
+    font-size: 1.2rem;
+}
+
+.container{
+    width: 64.5vw;
+    margin: 20px 20px 0 190px;
+}
+
+
+.excluir{
+    position: absolute;
+    padding: 40px;
+    background-color: #FFF;
+    border-radius: 4px;
+    top: 11%;
+    right: 2%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    opacity: 0;
+}
+
+.active{
+    animation: show .6s ease forwards;
+}
+
+@keyframes show{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        top: 11%;
+        right: 5%;
+    }
+    100%{
+        top: 11%;
+        right: 4%;
+        opacity: 1;
+    }
+}
+
+.excluir button{
+    height: 40px;
+    width: 80px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.excluir .yes{
+    background: transparent;
+}
+
+.excluir .yes:hover{
+    background-color: #cfcfcf;
+}
+
+.excluir .no{
+    background-color: #2394cc;
+    color: #FFF;
+}
+.excluir .no:hover{
+    background-color: #1a6b93;
+}

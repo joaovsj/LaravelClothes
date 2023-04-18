@@ -1,0 +1,23 @@
+.msg{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 15px 0;
+    border: 2px solid #023535b6;
+    color: #023535;
+    background-color: #0FC2C0; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.msg-danger{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 15px 0;
+    border: 2px solid #7F1412;
+    color: #7F1412;
+    background-color: #FF5B57; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}

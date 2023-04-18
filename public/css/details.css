@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Open+Sans:wght@600&display=swap');
+
+:root{
+    --color1:rgba(6, 32, 38, 1);
+    --color2:rgba(137, 140, 116, 1);
+    --color3:rgba(242, 222, 215, 1);
+    --color4:rgba(216, 199, 192, 1);
+    --color5:rgba(140, 77, 63, 1);
+    --color6:#F25C05;
+    --color7:#F2E416;    
+
+}
+
+
+
+main{
+    width: 80%;
+    height: 80vh;
+    margin: 40px auto;
+    display: flex;
+}
+
+main .first_content{
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+}
+
+main .first_content>img{
+    width: 100%;
+    height: 80%;
+    margin-top: 15%;
+}
+
+main .second_content{
+    position: relative;
+    width: 50%;
+    height: 70%;
+    padding-left: 5px;
+    margin-top: 8%;
+}
+
+main .second_content  h2{
+    position: absolute;
+    top: -10%;
+    left: -11%;
+    font-size: 2rem;
+    color: var(--color7);
+    line-height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    border-left: 40px solid var(--color7);
+}
+
+main .second_content>span{
+    position: absolute;
+    top: -5%;
+    right: -12%;
+    font-size: 2rem;
+}
+
+main .second_content .content_description{
+    margin-top: 50px;
+    position: absolute;
+    right: -12%;
+    text-align: justify;
+    width: 600px;
+    height: 300px;
+}
+
+main .second_content .content_description p {
+    font-size: 1.2rem;
+    color: var(--color2);
+}
+
+main .second_content a{
+    text-decoration: none;
+}
+
+main .second_content a button{
+    margin-top: 50px;
+    width: 40%;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--color6);
+    box-shadow: 0 4px 14px rgba(78,86,255,.4);
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: .3s ease;
+}
+
+main .first_content::before{
+    content: '';
+    display: block;
+    width: 800px;
+    height: 500px;
+    background-color: var(--color1);
+    z-index: -111;
+    position: absolute;
+    left: 20%;
+}
+
+.container{
+    width: 1530px;
+    height: 40px;
+    margin: 30px auto 0 auto;
+}
+
+.container .msg{
+    padding: 15px;
+}
+
+.container .msg p{
+    font-size: 1.2rem;
+}

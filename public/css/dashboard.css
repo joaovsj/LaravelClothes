@@ -1,0 +1,106 @@
+.text{
+    margin-top: 40px;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.content{
+    height: 110vh;
+    width: 80%;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    margin: 10vh auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+}
+
+.content .management{
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 4px;
+    background-color: #FFF;
+}
+
+.content .management button{
+    margin: 0 40px;
+    padding: 20px 0 0 0;
+    background-color: transparent;
+    border: none;
+    
+}
+
+.content .management button>a{
+    color: rgb(98, 97, 97);
+    font-size: 1.2rem;
+}
+
+.content .management button:last-child{
+    margin-right: 100px;
+}
+
+.grafic{
+    height: calc(110% - 6vh);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 40px 40px 40px 80px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.grafic .left{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #FFF;
+    border-radius: 4px;
+}
+
+.grafic .left canvas{
+    height: 100px;
+}
+
+.grafic .right{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+
+}
+
+.grafic .right div>i{
+    font-size: 2rem;
+}
+.grafic .right div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 1.3rem;
+    margin: 20px 0;
+    width: 80%;
+    flex-grow: 1;
+    background-color: #FFF;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+
+.grafic .right div:first-child,
+.grafic .right div:last-child{
+    margin: 0 !important;
+}

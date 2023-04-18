@@ -1,0 +1,240 @@
+main{
+    position: relative;
+    z-index: 99999;
+    background-color: #FFF;
+    padding: 50px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main .first_form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 60px;
+    border-radius: 4px;
+}
+
+main .first_form h1{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize; 
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--color1);
+    border-left: 25px solid var(--color1);
+}
+
+
+main .first_form .inputBox{
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgba(6, 32, 38, 1);
+}
+
+main .first_form #btn{
+    border: none !important;
+}
+
+main .first_form .inputBox input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+
+main .first_form .inputBox>button{   
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--color1);
+    box-shadow: 0 4px 14px rgba(78,86,255,.4);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    transition: .3s ease;
+}
+
+main .first_form .inputBox>button:hover{
+    cursor: pointer;
+    background-color: #FFF;
+    color: var(--color1);
+    border: 2px solid var(--color1);
+}
+
+main .first_form a{
+    text-align: right;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color2);
+}
+
+
+.inputSelect{
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+    border: 2px solid #555;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.boxArea{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    gap: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.boxArea textarea{
+    height: 80px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    border: 2px solid rgba(6, 32, 38, 1);
+}
+
+.first_form input[type="file"]{
+    display: none;
+}
+
+.first_form #foto{
+    z-index: 777;
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.first_form #foto:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.first_form #foto i{
+    font-size: 1.3rem;
+}
+
+
+.second_form{
+    position: relative;
+    padding: 40px;
+    min-height: 400px;
+    width: 700px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.second_form form{
+    position: relative;
+    width: 100%;
+    height: 20%;
+}
+
+
+.second_form #btnListagem{
+    display: block;
+    margin: 0 0 20px 0px;
+    color: #333;
+}
+
+.second_form form .inputButtons{
+    display: flex;  
+    gap: 20px;
+}
+
+.second_form form .inputButtons input{
+    padding-left: 20px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgba(6, 32, 38, 1);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.second_form form .inputButtons>button{
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--color1);
+    box-shadow: 0 4px 14px rgba(78,86,255,.4);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    transition: .3s ease;
+}
+
+.second_form form .inputButtons>button:hover{
+    cursor: pointer;
+    background-color: #FFF;
+    color: var(--color1);
+    border: 2px solid var(--color1);
+}
+
+.second_form .table{
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    margin: 20px 0;
+}
+
+.second_form .table>thead{
+    background-color: var(--color6);
+}
+
+.second_form .table>thead tr{
+    line-height: 30px;
+}
+
+.second_form .table>tbody{
+    text-align: center;
+}
+
+.second_form .table>tbody tr{
+    line-height: 30px;
+}
+
+.second_form .table>tbody .btn a{
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    
+}
+
+.second_form .table>tbody .btn a i{
+    font-size: 1.3rem;
+    color: var(--color1);
+}
+
+

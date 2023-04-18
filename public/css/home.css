@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Open+Sans:wght@600&display=swap');
+
+:root{
+    --color1:rgba(6, 32, 38, 1);
+    --color2:rgba(137, 140, 116, 1);
+    --color3:rgba(242, 222, 215, 1);
+    --color4:rgba(216, 199, 192, 1);
+    --color5:rgba(140, 77, 63, 1);
+    --color6:#F25C05;
+    --color7:#F2E416;    
+
+}
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 10vh;
+    background-color: var(--color1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+header span h1{
+    color: yellow;
+}
+
+header ul{
+    display: flex;
+    list-style-type: none;
+    color: #FFF;
+    gap: 29px;
+    align-items: center;
+}
+
+header ul li{
+    padding: 2px;
+    position: relative;
+}
+header ul li a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+header ul li a::after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    margin-top: 4px;
+    background-color: #FFF;
+    transition: .3s ease;
+}
+
+header ul li:hover a::after{
+    width: 100%;
+}
+
+header form{
+    height: 100%;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header form input{
+    width: 100%;
+    padding: 13px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9rem;
+}
+
+header form button{
+    background-color: var(--color5);
+    padding: 13px;
+    border: none;
+    font-size: 1.1rem;
+    color: #FFF;
+}
+
+
+.wrapper{
+    width: 1530px;
+    border-radius: 4px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 60px auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.wrapper .card{
+    position: relative;
+    width: 430px;
+    height: 290px;
+    margin: 20px;
+    border-radius: 3px;
+    background-color: #FFF;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.wrapper .card img{
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    transition: all .3s ease;
+}
+
+.wrapper .card:hover img{
+    transform: scale(1.1);
+}
+
+.wrapper .card .content{
+    position: absolute;
+    width: 100%;
+    bottom: -34%;
+    background-color: #FFF;
+    padding: 10px 20px 22px 20px;
+    transition: all .3s ease;
+    box-shadow: 0px  -3px 10px 0px rgba(0, 0, 0, 0.15);
+    
+}
+
+.wrapper .card:hover .content{
+    bottom: 0;
+}  
+
+.wrapper .card .content .row,
+.wrapper .card .content .buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper .card .content .row .details span{    
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.wrapper .card .content .row .details p{
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+}
+
+.content .row .price{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--color2);
+}
+.content .buttons{
+    margin-top: 20px;
+}
+
+.content .buttons button{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 10px 0;
+    font-size: .8rem !important;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 3px;
+    border: 2px solid var(--color7);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .5s ease;
+}
+
+.content .buttons button>a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--color2);
+}
+
+
+
+.content .buttons button:first-child{
+    background-color: #FFF;
+    color: var(--color2); 
+    border: 2px solid var(--color2) !important;
+    margin-right: 10px;
+}
+
+.content .buttons button:last-child{
+    margin-left: 10px;
+    background-color: var(--color7);
+    color: var(--color2); 
+}
+
+.content .buttons button:first-child:hover{
+    background-color: rgb(167, 170, 151);
+    color: #FFF; 
+}
+
+.content .buttons button:last-child:hover{
+    background-color: #ddcf16;
+    border-color: #F2E416; 
+}
+
+
+.search{
+    width:  1515px;
+    border-radius: 4px;
+    margin: 80px auto 0 auto;
+    padding: 20px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.search form{ 
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.search form .inputBox{
+    width: 60%;
+}
+
+.search form .inputBox>input{
+    width: 100%;
+}
+
+/**/
+.search form .inputBox{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgba(6, 32, 38, 1);
+}
+
+.search form #btn{
+    border: none !important;
+}
+
+.search form .inputBox input{
+    border: none;
+    outline: none;
+    height: 100%;
+    padding-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+
+.search form button{   
+    height: 100%;
+    width: 15%;
+    padding: 0 20px;
+    background-color: var(--color1);
+    color: #FFF;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(78,86,255,.4);
+    border-radius: 4px;
+    transition: .4s;
+}
+
+.inputSelect{
+    width: 25%;
+    padding: 10px 15px;
+    outline: none;
+    border: 2px solid #555;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+#mensagem-pesquisa{
+    display: block;
+    /* width: 1515px; */
+}
+
+#mensagem-pesquisa p{
+    font-size: 1.5rem;
+}
+
+
+.container{
+    width: 1530px;
+    height: 40px;
+    margin: 30px auto 0 auto;
+}
+
+.container .msg{
+    padding: 15px;
+}
+
+.container .msg p{
+    font-size: 1.2rem;
+}
